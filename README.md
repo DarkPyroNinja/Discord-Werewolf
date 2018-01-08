@@ -1,16 +1,32 @@
 # Discord Werewolf
-Discord Werewolf is a bot that runs the game Werewolf (Mafia) on Discord. It is written in Python using discord.py. You can find me on Discord as belungawhale#4813.
+ Discord Werewolf is a bot that runs the game Werewolf (Mafia) on Discord. It is written in Python using discord.py. You can find me on Discord as belungawhale#4813.
 
 ## Setting the bot up
-Clone this repository. Rename `config.py.example` to `config.py` and `settings.py.example` to `settings.py`, and fill in the fields inside config.py. To change some gameplay-related settings, edit settings.py. This bot requires at least Python 3.5 to run.
+TO RUN/EDIT THIS BOT, YOU MUST HAVE PYTHON 3.5 OR ABOVE DOWNLOADED.
+
+Navigate to which branch of code you'd like, depending on which is newer, by the "branch" dropdown above the "Lang" file.
+
+Once you have your specified branch, move your cursor to the right, and click the 'Clone or Download' button. Click the "Download" portion, and it will download as a zip file. Open the zip, and copy/paste or extract it to a folder you will remember.
+
+Open the new folder (discord-werewolf-(branchname)) and rename the settings.py.example and config.py.example to just settings.py and config.py respectively. Open up the config.py file by right clicking and using the IDLE program. Go back to your Discord chat, and right click your own name on the member list. Click 'Copy ID', then paste it into the Owner ID section. You'll need to do the same with the people you want to have Admin privileges. Right click the channel you want Gameplay to happen in, and copy it's ID. The same with the channel you want the Debug messages to go. Paste them in the respective categories.
+
+To change some gameplay-related settings, edit settings.py.
+
+Next, you need to add the roles that are labeled in the file. They are "Players", "Admins", and "Werewolf Notify". You don't have to do Werewolf Notify, unless you want a role that people can tag (@Werewolf Notify) to get them to play. You MAY change the names for all of these roles, but you must keep them the exact same in both the file and the Discord role name.
 
 ## Dependencies
 Discord Werewolf has hard dependencies on discord.py and aiohttp. You can run `pip install -r requirements.txt` to install the required dependencies.
 
 ## Running the bot
-You must first create a new bot account at https://discordapp.com/developers/applications/me. Put the bot's token inside config.py. Next, add the bot to your server using the OAuth2 link `https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=8` for faster setup or `https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=268536848` for finer tuning of permissions, replacing CLIENT_ID with the client id. If you are running on Windows, run `python bot.py` or double-click run.bat to launch the auto-restarter (it will restart the bot if it crashes for whatever reason). If you are running on a UNIX-based system, run either `python3 bot.py` or `python3.5 bot.py`.
+In order to invite the bot to your server, you must essentially make the bot your own. To do this, visit https://discordapp.com/developers/applications/me and log in if you already aren't. Click the new app button, and put in the name. Afterwards, click Create App. In the new screen, scroll down and click the "Create a Bot User" button. This will make an actual useable bot that you see in many servers. Go to the User bot information you just created. Make sure Public bot is UNCHECKED. If it is checked, people can invite it to their server, and this bot is only meant to be played on one server. You need to click the 'click to reveal' text next to 'Token'. Copy this token, go back to your open Config.py file, and paste it into the Token line.
+
+Next, add the bot to your server using the OAuth2 link https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=8 for faster setup or https://discordapp.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=268536848 for finer tuning of permissions, replacing CLIENT_ID with the client id.
+
+From here, the bot should be usable by everyone. Exit out of the config.py file. If you are running on Windows, double-click the 'run.bat' file to start the bot. If you are running on a UNIX-based system, run either python3 bot.py or python3.5 bot.py. The bot should start up, and message your Debug channel with a message stating it is online and running. If it does not, look at the running 'run.bat' file, and see what the errors are. Take a screenshot of the errors, and ask a developer about the errors in the official Discord chat ( http://discord.gg/wqQkt54 ).
 
 ## Changelog
+
+1/8/2017 - Mudkip part 1! (Thanks to imad and Pyro) Updated tutorial in the README.md file. Added Mudkip gamemode (not likely to be balanced above 8 players), Added Jester, Minion, and Wolf Shaman roles, Added Assassin template, Added 4 new totems (Misdirection, Silence, Luck, and Pestilence) Added GA to Random and Template Guides and Tables. Added Wolf cub message to the lobby for when it grows up. Recoded Player death. Join order is now logged (Players join separate from the testing).
 
 11/25/2017 - Anniversary update! Reduced wait on join to 15 seconds; Finally prevented shaman from giving totem to same player twice in a row; Added Guardian Angel role; Added GA to gamemodes
 
