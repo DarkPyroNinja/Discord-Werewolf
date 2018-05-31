@@ -26,6 +26,13 @@ From here, the bot should be usable by everyone. Exit out of the config.py file.
 
 ## Changelog
 
+4/29/2018 - Fixed abstaining in Mudkip breaking game, fixed Doomsayer abilities, fixed Desperation totem not working right, fixed Monster not showing. Added the gamemode Drunkfire, added the roles of Hag and Village Drunk. Upped Default and Foolish gamemodes to 24 players.
+*Note: Village Drunk has special modifiers for the templates it can get.
+
+2/14/2018 - VALENTINE'S UPDATE! - Added the gamemodes of Mudkip and Evilvillage. Added the roles of Jester, Minion, Doomsayer, Wolf Shaman, Priest, Amnesiac, Vengeful Ghost, Succubus, Monster. Added the templates of Assassin, Blessed, Sharpshooter, Mayor. Added the totems of Misdirection, Silence, Luck, Pestilience, Desperation. Added a Wolf cub lobby message for when it grows up. Added more in-depth role and totem explanations. Upped player count from 20 to 23 for the Default gamemode
+*Note: Shaman and Wolf-Shaman now work differently in the Mudkip gamemode!
+*Note: Voting Mechanics also differ from that of the other gamemodes!
+
 1/8/2017 - Mudkip part 1! (Thanks to imad and Pyro) Updated tutorial in the README.md file. Added Mudkip gamemode (not likely to be balanced above 8 players), Added Jester, Minion, and Wolf Shaman roles, Added Assassin template, Added 4 new totems (Misdirection, Silence, Luck, and Pestilence) Added GA to Random and Template Guides and Tables. Added Wolf cub message to the lobby for when it grows up. Recoded Player death. Join order is now logged (Players join separate from the testing).
 
 11/25/2017 - Anniversary update! Reduced wait on join to 15 seconds; Finally prevented shaman from giving totem to same player twice in a row; Added Guardian Angel role; Added GA to gamemodes
